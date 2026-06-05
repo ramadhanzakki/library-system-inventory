@@ -7,8 +7,8 @@
     <title>E-Library</title>
 </head>
 <body>
-    
+    @include('layout.header')
 
-    
+    @include('layout.footer')
 </body>
 </html>
