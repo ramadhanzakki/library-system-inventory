@@ -148,7 +148,7 @@ th {
 }
 
 
-.tombol-edit {
+.edit-btn {
     background-color: #f59e0b;
     color: white;
     padding: 8px 12px;
@@ -158,11 +158,11 @@ th {
     margin-right: 5px;
 }
 
-.tombol-edit:hover {
+.edit-btn:hover {
     background-color: #d97706;
 }
 
-.tombol-hapus {
+.delete-btn {
     background-color: #dc2626;
     color: white;
     padding: 8px 12px;
@@ -171,7 +171,7 @@ th {
     font-size: 14px;
 }
 
-.tombol-hapus:hover {
+.delete-btn:hover {
     background-color: #b91c1c;
 }
 
