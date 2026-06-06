@@ -4,14 +4,12 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-class HomeController extends Controller
+class AddController extends Controller
 {
-
     public function index(){
-        $page = 'partial.home';
+        $page = 'partial.add';
         return view('index', [
             'page' => $page
         ]);
     }
-
 }

@@ -39,7 +39,7 @@
 
         <div class="btn-group">
             <button type="submit" class="save-btn">SAVE BOOK</button>
-            <a href="#" class="back-btn">BACK</a>
+            <a href="{{ route('home') }}" class="back-btn">BACK</a>
         </div>
     </form>
 </div>
