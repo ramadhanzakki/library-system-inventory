@@ -11,7 +11,7 @@
     @include('layout.header')
 
     <div class="container">
-        @include('partial.add')
+        @include('partial.edit')
     </div>
 
     @include('layout.footer')
