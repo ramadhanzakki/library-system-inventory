@@ -17,11 +17,11 @@
         <thead>
                 <tr>
                     <th>No</th>
-                    <th>Judul Buku</th>
-                    <th>Pengarang</th>
-                    <th>Tahun</th>
-                    <th>Kategori</th>
-                    <th>Aksi</th>
+                    <th>Book Title</th>
+                    <th>Author</th>
+                    <th>Year</th>
+                    <th>Cataogry</th>
+                    <th>Action</th>
                 </tr>
             </thead>
             <tbody>

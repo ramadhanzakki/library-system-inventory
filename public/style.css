@@ -178,23 +178,23 @@ th {
 
 
 
-.judul-halaman {
+.page-title {
     text-align: center;
     margin-bottom: 30px;
 }
 
-.judul-halaman h1 {
+.page-title h1 {
     color: #1a227f;
     margin-bottom: 10px;
 }
 
-.judul-halaman p {
+.page-title p {
     color: #666;
     margin: 0;
 }
 
 
-.kotak-form {
+.form-box {
     background-color: white;
     padding: 30px;
     border-radius: 10px;
@@ -204,19 +204,19 @@ th {
 }
 
 
-.grup-input {
+.input-group {
     margin-bottom: 20px;
 }
 
-.grup-input label {
+.input-group label {
     display: block;
     font-weight: bold;
     margin-bottom: 8px;
     color: #333;
 }
 
-.grup-input input, 
-.grup-input select {
+.input-group input, 
+.input-group select {
     width: 100%;
     padding: 12px;
     border: 1px solid #ccc;
@@ -225,20 +225,20 @@ th {
     font-family: inherit;
 }
 
-.grup-input input:focus, 
-.grup-input select:focus {
+.input-group input:focus, 
+.input-group select:focus {
     border-color: #1a227f;
     outline: none;
 }
 
 
-.kumpulan-tombol {
+.btn-group {
     display: flex;
     gap: 10px;
     margin-top: 30px;
 }
 
-.tombol-simpan {
+.save-btn {
     flex: 1;
     background-color: #1a227f;
     color: white;
@@ -250,11 +250,11 @@ th {
     font-size: 16px;
 }
 
-.tombol-simpan:hover {
+.save-btn:hover {
     background-color: #12185c;
 }
 
-.tombol-kembali {
+.back-btn {
     flex: 1;
     display: inline-block;
     text-align: center;
@@ -269,7 +269,7 @@ th {
     box-sizing: border-box;
 }
 
-.tombol-kembali:hover {
+.back-btn:hover {
     background-color: #f2f2f2;
 }
 
