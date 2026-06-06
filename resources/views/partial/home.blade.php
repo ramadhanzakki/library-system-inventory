@@ -8,7 +8,7 @@
         <h2>Books Collection</h2>
     </div>
     <div class="add-book">
-        <a href="{{ route('add') }}" class="add-btn">Add Book</a>
+        <a href="{{ route('add.dashboard') }}" class="add-btn">Add Book</a>
     </div>
 </div>
 

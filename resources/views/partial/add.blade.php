@@ -4,7 +4,13 @@
 </div>
 
 <div class="form-box">
-    <form method="POST" action="">
+    <form 
+        action="{{ route('add.books.store') }}"
+        method="POST" 
+        enctype="multipart/form-data"
+
+    >
+        @csrf
         <div class="input-group">
             <label for="title">Book Title: </label>
             <input type="text" name="title" id="title">
