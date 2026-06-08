@@ -1,13 +1,13 @@
 <div class="page-title">
     <h2>Edit Book</h2>
-    <p>Please fill out the form below to edit a new book collection.</p>
+    <p>Please fill out the form below to edit a book collection.</p>
 </div>
 
 <div class="form-box">
     <form method="POST" action="">
         <div class="input-group">
             <label for="title">Book Title: </label>
-            <input type="text" name="title" id="title">
+            <input type="text" name="title" id="title" value="{{ $book->title }}">
         </div>
 
         <div class="input-group">

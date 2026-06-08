@@ -2,16 +2,21 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Http\Request;
+use App\Models\Book;
 
 class HomeController extends Controller
 {
 
-    public function index(){
+    public function index()
+    {
         $page = 'partial.home';
+        $books = Book::all();
+        $no = 1;
+
         return view('index', [
-            'page' => $page
+            'page' => $page,
+            'books' => $books,
+            'no' => $no
         ]);
     }
-
 }
