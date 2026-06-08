@@ -14,6 +14,14 @@ class AddController extends Controller
         ]);
     }
 
+    public function edit(Book $book)
+    {
+        $page = 'partial.edit';
+        return view('index', [
+            'page' => $page
+        ]);
+    }
+
     public function store(Request $request){
         $data = $request->validate([
             'title' => 'required|string|max:100',

@@ -7,7 +7,8 @@ use App\Models\Book;
 class HomeController extends Controller
 {
 
-    public function index(){
+    public function index()
+    {
         $page = 'partial.home';
         $books = Book::all();
         $no = 1;
@@ -18,5 +19,4 @@ class HomeController extends Controller
             'no' => $no
         ]);
     }
-
 }

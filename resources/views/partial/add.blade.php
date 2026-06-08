@@ -5,7 +5,7 @@
 
 <div class="form-box">
     <form 
-        action="{{ route('add.books.store') }}"
+        action="#"
         method="POST" 
         enctype="multipart/form-data"
 

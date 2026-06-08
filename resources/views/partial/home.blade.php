@@ -8,7 +8,7 @@
         <h2>Books Collection</h2>
     </div>
     <div class="add-book">
-        <a href="{{ route('add.dashboard') }}" class="add-btn">Add Book</a>
+        <a href="{{ route('book.create') }}" class="add-btn">Add Book</a>
     </div>
 </div>
 
@@ -35,7 +35,7 @@
                     <td>{{ $book->year }}</td>
                     <td><span class="badge">{{ $book->category }}</span></td>
                     <td>
-                        <a href="{{ route('edit') }}" class="edit-btn">Edit</a>
+                        <a href="#" class="edit-btn">Edit</a>
                         <a href="#" class="delete-btn">Delete</a>
                     </td>
                 </tr>
