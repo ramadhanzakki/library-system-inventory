@@ -28,4 +28,10 @@ class BookController extends Controller
         Book::create($data);
         return redirect(route('home'));
     }
+
+    public function destroy(Book $book)
+    {
+        $book->delete();
+        return redirect(route('home'));
+    }
 }

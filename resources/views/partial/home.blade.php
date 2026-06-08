@@ -36,7 +36,14 @@
                     <td><span class="badge">{{ $book->category }}</span></td>
                     <td>
                         <a href="#" class="edit-btn">Edit</a>
-                        <a href="#" class="delete-btn">Delete</a>
+                        <form action="{{ route('book.destroy', $book->id_book) }}" method="POST" style="display:inline">
+                            @csrf
+                            @method('DELETE');
+
+                            <button type="submit" class="delete-btn" onclick="return confirm('Yakin Mau menghapus data ini?')">
+                                Hapus
+                            </button>
+                        </form>
                     </td>
                 </tr>
                 <?php $no++;?>
