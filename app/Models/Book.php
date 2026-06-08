@@ -15,4 +15,9 @@ class Book extends Model
         'category',
         'year'
     ];
+
+    public function getRouteKeyName()
+    {
+        return 'id_book';
+    }
 }

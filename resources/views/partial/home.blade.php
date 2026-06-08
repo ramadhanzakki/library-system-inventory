@@ -35,7 +35,7 @@
                     <td>{{ $book->year }}</td>
                     <td><span class="badge">{{ $book->category }}</span></td>
                     <td>
-                        <a href="#" class="edit-btn">Edit</a>
+                        <a href="{{ route('book.edit', $book->id_book) }}" class="edit-btn">Edit</a>
                         <form action="{{ route('book.destroy', $book->id_book) }}" method="POST" style="display:inline">
                             @csrf
                             @method('DELETE');

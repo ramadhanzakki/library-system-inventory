@@ -29,6 +29,29 @@ class BookController extends Controller
         return redirect(route('home'));
     }
 
+    public function edit(Book $book)
+    {
+        $page = 'partial.edit';
+        return view('index', [
+            'page' => $page,
+            'book' => $book
+        ]);
+    }
+
+    public function update(Request $request, Book $book)
+    {
+        $data = $request->validate([
+            'title' => 'required|string|max:100',
+            'author' => 'required|string|max:100',
+            'publisher' => 'required|string|max:100',
+            'year' => 'required|string|max:4',
+            'category' => 'required|string|max:50'
+        ]);
+
+        $book->update($data);
+        return redirect(route('home'));
+    }
+
     public function destroy(Book $book)
     {
         $book->delete();
